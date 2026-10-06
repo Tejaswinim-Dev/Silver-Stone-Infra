@@ -294,9 +294,9 @@ export default function PlotViewClient({ plot }: Props) {
             </h3>
             <div className="space-y-3">
               {Object.entries(plot.specifications).map(([key, val]) => (
-                <div key={key} className="flex justify-between items-center p-3 bg-white/5 rounded-xl border border-white/5">
-                  <span className="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">{key}</span>
-                  <span className="text-xs font-bold text-white">{val}</span>
+                <div key={key} className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4 p-3.5 bg-white/5 rounded-xl border border-white/5">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-[#c5a880] font-semibold shrink-0">{key}</span>
+                  <span className="text-xs font-bold text-white text-left sm:text-right break-words">{val}</span>
                 </div>
               ))}
             </div>
