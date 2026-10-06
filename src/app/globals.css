@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-jakarta);
+  
+  --color-primary-50: #f5f7fa;
+  --color-primary-100: #e4e7eb;
+  --color-primary-200: #cbd2d9;
+  --color-primary-300: #9aa5b1;
+  --color-primary-400: #7b8794;
+  --color-primary-500: #616e7c;
+  --color-primary-600: #52606d;
+  --color-primary-700: #3e4c59;
+  --color-primary-800: #323f4b;
+  --color-primary-900: #0a0a0f;
+
+  --color-accent: #c5a880;
+}
+
+
+.font-bodoni {
+  font-family: var(--font-bodoni), serif;
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel), serif;
+}
+
+.font-cormorant {
+  font-family: var(--font-cormorant), serif;
+}
+
+.font-jakarta {
+  font-family: var(--font-jakarta), sans-serif;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff2dd 0%, #c5a880 45%, #9e7f52 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-text-shadow {
+  text-shadow: 0 4px 30px rgba(197, 168, 128, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0f;
+  color: #ffffff;
+  font-family: var(--font-jakarta), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #c5a880;
+  color: #0a0a0f;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
